@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import UserLoginForm from './component/UserLoginForm.jsx'
+import LoginForm from './component/LoginForm.jsx'
 
 function App() {
 
   return (
     <main>
-      <UserLoginForm/>
+      <LoginForm/>
     </main>
   )
 }

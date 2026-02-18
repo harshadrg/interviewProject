@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function UserLoginForm() {
+export default function LoginForm() {
   const [userData, setUserData] = useState({
     username: "",
     password: "",
