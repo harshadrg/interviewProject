@@ -7,3 +7,6 @@ const port = 5000; //always store in .env
 app.listen(port,()=>{
     console.log(`server is running on the http://localhost:${port}`)
 })
+
+import router from './router/userAndAdminRouter.js';
+app.use("/",router)
