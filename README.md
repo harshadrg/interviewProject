@@ -11,7 +11,7 @@ This project demonstrates **role-based access control**, **protected routing**, 
 - React (Vite)
 - Tailwind CSS
 - Axios
-- React Router DOM
+- React Router
 
 ### Backend
 - Node.js
@@ -194,7 +194,7 @@ Ensure `cors()` is enabled in your Express backend to allow requests from the Vi
 Example:
 
 ```js
-const cors = require('cors');
+import cors from 'cors';
 app.use(cors());
 ```
 
