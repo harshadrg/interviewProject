@@ -39,8 +39,8 @@ Follow the steps below to run the project locally.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd project
+git clone https://github.com/harshadrg/interviewProject
+cd interviewProject
 ```
 
 ---
@@ -113,13 +113,13 @@ http://localhost:5173
 
 📸 Screenshot:
 
-```markdown
-![Login Page](./screenshots/loginuser.png)
-```
 
-```markdown
+![Login Page](./screenshots/loginuser.png)
+
+
+
 ![Login Page](./screenshots/loginadmin.png)
-```
+
 
 ---
 
@@ -149,13 +149,12 @@ After successful login:
 
 📸 Screenshot:
 
-```markdown
-![Success Page](./screenshots/successuser.png)
-```
 
-```markdown
+![Success Page](./screenshots/successuser.png)
+
+
 ![Success Page](./screenshots/successadmin.png)
-```
+
 
 ---
 
