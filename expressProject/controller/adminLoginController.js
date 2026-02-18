@@ -5,34 +5,34 @@ export const adminLoginController = async (req, res) => {
             return res.status(400).json({ message: "Invalid request body" });
         }
 
-        const { adminusername, adminpassword } = req.body;
+        const { username, password } = req.body;
 
         // 2. Comprehensive validation (Checking for existence, type, and content)
         const isInvalid = (field) => !field || typeof field !== 'string' || field.trim() === "";
 
-        if (isInvalid(adminusername) || isInvalid(adminpassword)) {
+        if (isInvalid(username) || isInvalid(password)) {
             return res.status(400).json({ 
                 success: false,
-                message: "adminusername and adminpassword are required strings" 
+                message: "username and password are required strings" 
             });
         }
 
-        // 3. hardcoded adminusername and adminpassword
+        // 3. hardcoded username and password
         const MOCK_USER = "admin";
-        const MOCK_PASS = "adminpassword123";
+        const MOCK_PASS = "password123";
 
-        if (adminusername === MOCK_USER && adminpassword === MOCK_PASS) {
+        if (username === MOCK_USER && password === MOCK_PASS) {
             return res.status(200).json({
                 success: true,
                 message: "Login successful!",
-                user: { adminusername } // NEVER return the adminpassword in the response
+                user: { username } // NEVER return the password in the response
             });
         }
 
         // 4. Generic error for failed login (Security tip: don't say WHICH one was wrong)
         return res.status(401).json({ 
             success: false,
-            message: "Invalid adminusername or adminpassword" 
+            message: "Invalid username or password" 
         });
 
     } catch (error) {
