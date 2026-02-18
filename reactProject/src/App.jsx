@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import LoginForm from './component/LoginForm.jsx'
+import { Outlet } from 'react-router'
 
 function App() {
 
   return (
     <main>
-      <LoginForm/>
+      <Outlet/>
     </main>
   )
 }
