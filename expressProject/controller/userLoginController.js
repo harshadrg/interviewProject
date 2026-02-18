@@ -1,4 +1,4 @@
-export const UserLoginController = async (req, res) => {
+export const userLoginController = async (req, res) => {
     try {
 
         // 1. Validate that req.body exists (prevents crashes if middleware fails)
